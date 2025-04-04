@@ -178,7 +178,6 @@ public class Signup3 extends JFrame implements ActionListener {
         c.setBounds(420,720,100,30);
         c.addActionListener(this);
         add(c);
-
         getContentPane().setBackground(new Color(215,252,252));
         setSize(850,800);
         setLayout(null);

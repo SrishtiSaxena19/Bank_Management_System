@@ -216,6 +216,7 @@ public class Signup2 extends JFrame implements ActionListener {
             if (pan.length() != 10) {
                 JOptionPane.showMessageDialog(null, "PAN number must be exactly 10 characters");
                 return;
+
             }
             if (textPan.getText().equals("") || textAadhar.getText().equals("")){
                 JOptionPane.showMessageDialog(null,"Fill all the fields");
