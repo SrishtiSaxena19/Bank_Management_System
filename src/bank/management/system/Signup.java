@@ -247,6 +247,10 @@ public class Signup extends JFrame implements ActionListener {
         String state = textState.getText();
 
         try {
+            if (pincode.length() != 6) {
+                JOptionPane.showMessageDialog(null, "Pincode number must be exactly 6 digits");
+                return;
+            }
             if (textName.getText().equals("")) {
                 JOptionPane.showMessageDialog(null, "Fill all the fields");
             } else {
