@@ -207,6 +207,14 @@ public class Signup2 extends JFrame implements ActionListener {
         }
 
         try{
+            if (addhar.length() != 12) {
+                JOptionPane.showMessageDialog(null, "Aadhar number must be exactly 12 digits");
+                return;
+            }
+            if (pan.length() != 10) {
+                JOptionPane.showMessageDialog(null, "PAN number must be exactly 10 characters");
+                return;
+            }
             if (textPan.getText().equals("") || textAadhar.getText().equals("")){
                 JOptionPane.showMessageDialog(null,"Fill all the fields");
             }else {
